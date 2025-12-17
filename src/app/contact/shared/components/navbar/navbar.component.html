@@ -1,0 +1,41 @@
+<!-- ✅ NAVBAR con estilos Tailwind CSS -->
+<nav class="bg-blue-600 text-white shadow-lg">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-16">
+            <!-- Logo/Brand (opcional) -->
+            <div class="flex-shrink-0">
+                <span class="text-xl font-bold">My App</span>
+            </div>
+
+            <!-- Enlaces del Navbar -->
+            <ul class="flex space-x-4">
+                <li>
+                    <!-- ✅ routerLink con "/" = ruta absoluta -->
+                    <!-- routerLinkActive agrega clase 'active' cuando la ruta está activa -->
+                    <a
+                        routerLink="/about"
+                        routerLinkActive="bg-blue-700 border-b-2 border-white"
+                        class="px-3 py-2 rounded-md text-sm font-medium hover:bg-blue-700 transition-colors duration-200">
+                        About
+                    </a>
+                </li>
+                <li>
+                    <a
+                        routerLink="/pricing"
+                        routerLinkActive="bg-blue-700 border-b-2 border-white"
+                        class="px-3 py-2 rounded-md text-sm font-medium hover:bg-blue-700 transition-colors duration-200">
+                        Pricing
+                    </a>
+                </li>
+                <li>
+                    <a
+                        routerLink="/contact"
+                        routerLinkActive="bg-blue-700 border-b-2 border-white"
+                        class="px-3 py-2 rounded-md text-sm font-medium hover:bg-blue-700 transition-colors duration-200">
+                        Contact
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
